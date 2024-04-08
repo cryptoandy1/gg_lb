@@ -1,7 +1,9 @@
 import express from 'express'
+import cors from 'cors'
 import { parseLB } from './scraper.js'
 
 const app = express()
+app.use(cors())
 
 const PORT = process.env.PORT || 4000
 
